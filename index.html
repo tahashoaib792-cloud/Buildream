@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buildream</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topbar {
+    height: 50px;
+    background-color: #111923;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    font-family: Arial, sans-serif;
+}
+
+.call {
+    margin-right: 100px;
+}
+
+.call span {
+    color: orange;
+}
+
+
+.email {
+    margin-right: 30px;
+    color: white;
+}
+
+.email span {
+    color: orange;
+}
+
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+
+.social a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid orange;
+    color: orange !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px
+}
+
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #111923;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.logo {
+    width: 250px;
+    height: 90px;
+
+    background-color: orange;
+    color: #111923;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    clip-path: polygon(
+        0 0,
+        88% 0,
+        100% 100%,
+        0 100%
+    );  
+    
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.menu a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: orange !important;
+}
+
+.hero {
+    height: 600px;
+    background-image: url(backgroundimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.content {
+    color: white;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.contact {
+    background-color: orange;
+}
+
+.quote {
+    background-color: black;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text {
+    width: 50%;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+}
+
+
+.trusted {
+    color: orange;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+}
+
+.companies div {
+text-align: center;
+}
+
+.companies i {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.companies p {
+    margin: 0;
+}
+
+.companies div:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.fixed-image {
+    height: 600px;
+    background-image: url(bg_4.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.image-text {
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+    color: black
+
+    padding: 60px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.image-text h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.fixed-image button {
+    margin-left: 60px;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter {
+    background-color: orange;
+    width: 100%;
+    padding: 35px 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.newsletter h2 {
+    color: black
+    margin: 0;
+}
+
+.newsletter p {
+    color: black
+    margin: 10px 0 0;
+}
+
+.subscribe-box {
+    display: flex;
+}
+
+.subscribe-box input {
+    width: 300px;
+    padding: 15px;
+    background-color: white
+    border: none;
+}
+
+.subscribe-box button {
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+footer {
+    background-color: #111923;
+    padding: 60px 70px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    width: 25%;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.footer-column p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons i {
+    color: #ff5a00;
+    font-size: 18px;
+    margin-right: 18px;
+}
+
+
+
+.post {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.post a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.post a:hover {
+    color: #ff5a00;
+}
+
+.post span {
+    display: block;
+    color: #ff5a00;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+
+.link {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.link:hover {
+    color: #ff5a00;
+}
+
+
+
+.footer-column p i {
+    color: #ff5a00;
+    margin-right: 10px;
+}
+
+
+.footer {
+    background-color: #111923;
+    color: white;
+    padding: 60px 70px 20px;
+}
+.copyright {
+    border-top: 1px solid #333;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    color: #aaa;
+    
+}
+
+.copyright i {
+    color: orange;
+}
+
+.copyright span {
+     color: orange;
+     border-bottom: 1px solid orange;
+}
+    </style>
+
+
+    
+</head>
+
+<body>
+
+<div class="topbar">
+
+     <div class="call">
+        <span>Free call:</span>
+        +1 456 555 1462
+        </div>
+
+        <div class="email">
+            <span>Email:</span>
+            info@example.com
+        </div>
+
+        <div class="social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        </div>
+
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+
+            <div class="logo">BUILDREAM</div>
+
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">PRICING</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+
+         </div>
+
+
+        <section class="hero">
+
+            <div class="content">
+
+                <p>- Since 1982 -</p>
+
+                <h1>
+                    We will be happy to<br>
+                    take care of your work.
+                </h1>
+
+                <div class="buttons">
+
+                    <a href="#" class="btn contact">
+                    CONTACT US <i class="fa-solid fa-arrow-right-long"></i></a>
+
+                    <a href="#" class="btn quote">
+                    Request A QUOTE <i class="fa-solid fa-arrow-left-long"></i></a>
+                </div>
+
+            </div>
+
+        </section>
+
+<div class="about">
+    <div class="image">
+        <img src="workr1.jpg" alt="Worker">
+    </div>
+
+    <div class="text">
+        <p>Welcome to Buildream</p>
+        <br>
+
+        <h1>Quality and<br>
+            Affordable<br>
+            Constructor</h1>
+            <br>
+
+            <p>
+                Far far away, behind the word mountains, far from the countries<br>
+                Vokalia and Consonantia, there live the blind texts. Separated they<br>
+                live in Bookmarksgrove right at the coast of the Semantics, a large<br>
+                language ocean.<br>
+    </div>
+</div>
+<br>
+
+<div class="text">
+    <p class="trusted By">Trusted By</p>
+    <br>
+    <h1>
+        Companies We've Worked<br>
+         With
+         <br>
+    </h1>
+
+</div>
+
+<div class="companies">
+
+    <div>
+        <i class="fa-jelly-duo fa-regular fa-building"></i>
+        <p>ABC Corp</p>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-city"></i>
+        <p>City Dev</p>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-building-columns"></i>
+        <p>State Bank</p>
+    </div>
+
+    <div>
+        <i class="fa-sharp fa-solid fa-hospital"></i>
+        <p>Metro Health</p>
+    </div>
+
+    <div>
+        <i class="fa-sharp fa-solid fa-hotel"></i>
+        <p>Grand Hotels</p>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-industry"></i>
+        <p>Industrial Co</p>
+    </div>
+</div>
+
+<br>
+
+<section class="fixed-image">
+
+    <div class="image-text">
+        <p>You May Contact Us For Construction & Renovation Work</p>
+        
+        <h1>
+            We Are Great Construction
+            Company
+        </h1>
+        </div>
+
+        <button>Make An Appointment</button>
+    </div>
+
+</section>
+<br>
+
+<div class="newsletter">
+
+    <div>
+    <h2>Subscribe to our newsletter</h2>
+
+    <p>
+        Get the latest updates on projects, industry news and exclusive offers
+    </p>
+    </div>    
+
+    <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email address">
+
+        <button>Subscribe</button>
+    </div>
+
+</div>
+
+<footer>
+
+    <div class="footer-container">
+
+    
+        <div class="footer-column">
+            <h3>BUILDREAM</h3>
+
+            <p>
+                A small river named Duden flows by their place and supplies
+                it with the necessary regelialia.
+            </p>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+
+
+        <div class="footer-column">
+            <h3>Recent Posts</h3>
+
+            <div class="post">
+                <img src="image_1.avif">
+
+                <div>
+                    <a href="#">Biggest Construction in New York, USA</a>
+                    <span>Admin &nbsp; 19</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="image_2.avif">
+
+                <div>
+                    <a href="#">Biggest Construction in New York, USA</a>
+                    <span>Admin &nbsp; 19</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="image_3.avif">
+
+                <div>
+                    <a href="#">Biggest Construction in New York, USA</a>
+                    <span>Admin &nbsp; 19</span>
+                </div>
+            </div>
+        </div>
+
+
+    
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a class="link" href="#">› Home</a>
+            <a class="link" href="#">› About</a>
+            <a class="link" href="#">› Services</a>
+            <a class="link" href="#">› Project</a>
+            <a class="link" href="#">› Pricing</a>
+            <a class="link" href="#">› Contact Us</a>
+        </div>
+
+
+        <!-- HAVE A QUESTION -->
+        <div class="footer-column">
+            <h3>Have a Question?</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                203 Fake St. Mountain View, San Francisco, California, USA
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +1 456 555 0142
+            </p>
+
+            <p>
+                <i class="fa-solid fa-paper-plane"></i>
+                info@example.com
+            </p>
+        </div>
+
+    </div>
+
+            
+<div class="copyright">
+    Copyright ©2026 All rights reserved | 
+    This template is made with 
+    <i class="fa-jelly-duo fa-regular fa-heart"></i>
+    by
+    <span>Colorlib</span>
+
+    </div>
+    </footer>
+    </body>
+    </html>
